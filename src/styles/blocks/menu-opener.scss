@@ -1,0 +1,10 @@
+.menu-opener {
+  background-image: url(../images/menu.svg);
+  width: 24px;
+  height: 16px;
+  display: none;
+
+  @include onLaptop {
+    display: flex;
+  }
+}
