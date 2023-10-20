@@ -46,6 +46,10 @@
     margin-top: 88px;
     margin-bottom: 40px;
 
+    @include onLaptop {
+      font-size: 56px;
+    }
+
     @include onMobile {
       font-size: 48px;
       line-height: 41px;
@@ -117,16 +121,20 @@
     @include onMobile {
       margin-bottom: 40px;
     }
+
+    &-icon {
+      transition: all $duration;
+    }
     
     &-link {
-      margin-right: 40px;
-      transition: fill $duration;
+      margin-right: 32px;
+      transition: all $duration;
 
       &:last-child {
         margin-right: 0;
       }
 
-      &:hover.footer__social-icon {
+      &:hover .footer__social-icon {
         fill: $white;
       }
     }

@@ -1,6 +1,6 @@
 .menu {
   box-sizing: border-box;
-  height: 100vh;
+  height: 100%;
   padding-top: $topPadding;
   background-color: rgba(238, 247, 255, 1);
 
@@ -10,12 +10,9 @@
 
   &__cross {
     background-image: url(../images/cross.svg);
-    width: 15px;
-    height: 15px;
-    display: none;
-  
-    @include onLaptop {
-      display: flex;
-    }
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

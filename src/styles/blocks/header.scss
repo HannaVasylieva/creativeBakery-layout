@@ -1,25 +1,29 @@
 .header {
   box-sizing: border-box;
-  height: 100vh;
+  height: 100%;
   background-image: url(../images/Cookie-BG.png);
+  background-size: 584px;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: $topPadding;
+  margin-bottom: 290px;
 
   @include onDesctop {
     background-size: 545px;
     background-position: 50% 20%;
+    margin-bottom: 313px;
   }
 
   @include onLaptop {
-    background-size: 500px;
-    background-position: 50% 30%;
+    background-size: 328px;
+    background-position: 50% 50%;
     padding-top: $topPaddingLaptop;
+    margin-bottom: 228px;
   }
 
   @include onMobile {
-    background-size: 450px;
-    background-position: 50% 60%;
+    background-size: 290px;
+    background-position: 50% 80%;
     margin-bottom: 50px;
   }
 
@@ -67,23 +71,13 @@
     @include onLaptop {
       font-size: 80px;
       line-height: 68px;
-      margin-bottom: 100px;
-    }
-
-    @include onSmLaptop {
-      margin-bottom: 350px;
+      margin-bottom: 210px;
     }
 
     @include onMobile {
-      font-size: 70px;
-      line-height: 60px;
-      margin-bottom: 400px;
-    }
-
-    @include onSmMobile {
       font-size: 64px;
-      line-height: 54px;
-      margin-bottom: 300px;
+      line-height: 60px;
+      margin-bottom: 290px;
     }
   }
 
@@ -91,7 +85,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 280px;
+    width: 260px;
     height: 56px;
     text-decoration: none;
     font-weight: 500;
@@ -101,11 +95,15 @@
     color: $orange;
     border: 2px solid $orange;
     border-radius: 32px;
-
     transition: all $duration;
 
     @include onLaptop {
       align-self: center;
+      width: 326px;
+    }
+
+    @include onMobile {
+      width: 288px;
     }
 
     &::before {
@@ -116,9 +114,9 @@
     &:hover {
       background-color: $orange;
       color: $white;
-      transition: content $duration;
 
       &:before {
+        transition: all $duration;
         content: url(../images/cookies-white.svg);
       }
     }
