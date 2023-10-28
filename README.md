@@ -1,8 +1,4 @@
-# Creative Bakery
-
-## Project Description:
-
-This HTML and JavaScript-based website showcases a bakery's products and provides information about the business. This project aims to provide an immersive and user-friendly experience for visitors. The website is easily navigable. Below, we'll break down the key aspects of the project.
+Delicious Delights - HTML and JavaScript-based website showcases a bakery's products and provides information about the business. This project aims to provide an immersive and user-friendly experience for visitors. The website is easily navigable. Below, we'll break down the key aspects of the project.
 
 ## Features:
 
